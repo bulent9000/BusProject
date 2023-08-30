@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3108DA27-E54D-41F8-9ED3-0872C72E5898}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OTOBSS</RootNamespace>
+    <AssemblyName>OTOBSS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmAnk.Designer.cs">
+      <DependentUpon>KoltuklarAtaIzmAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmBur.Designer.cs">
+      <DependentUpon>KoltuklarAtaIzmBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ata Turizm\KoltuklarAtaIzmIst.Designer.cs">
+      <DependentUpon>KoltuklarAtaIzmIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstAnk.Designer.cs">
+      <DependentUpon>KoltuklarAgriIstAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstBur.Designer.cs">
+      <DependentUpon>KoltuklarAgriIstBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstIzm.Designer.cs">
+      <DependentUpon>KoltuklarAgriIstIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstAnk.Designer.cs">
+      <DependentUpon>KoltuklarBizIstAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstBur.Designer.cs">
+      <DependentUpon>KoltuklarBizIstBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz Turizm\KoltuklarBizIstIzm.Designer.cs">
+      <DependentUpon>KoltuklarBizIstIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BursaYönFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BursaYönFirmalar.Designer.cs">
+      <DependentUpon>BursaYönFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmAnk.Designer.cs">
+      <DependentUpon>KoltuklarDenizMavisiIzmAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmBur.Designer.cs">
+      <DependentUpon>KoltuklarDenizMavisiIzmBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deniz Mavisi\KoltuklarDenizMavisiIzmIst.Designer.cs">
+      <DependentUpon>KoltuklarDenizMavisiIzmIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkIst.Designer.cs">
+      <DependentUpon>KoltuklarEcelAnkIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkBur.Designer.cs">
+      <DependentUpon>KoltuklarEcelAnkBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecel Turizm\KoltuklarEcelAnkIzm.Designer.cs">
+      <DependentUpon>KoltuklarEcelAnkIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkBur.Designer.cs">
+      <DependentUpon>KoltuklarEzcanAnkBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkIst.Designer.cs">
+      <DependentUpon>KoltuklarEzcanAnkIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ezcan Turizm\KoltuklarEzcanAnkIzm.Designer.cs">
+      <DependentUpon>KoltuklarEzcanAnkIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstAnk.Designer.cs">
+      <DependentUpon>KoltuklarGözlerIstAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstBur.Designer.cs">
+      <DependentUpon>KoltuklarGözlerIstBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gözler Turizm\KoltuklarGözlerIstIzm.Designer.cs">
+      <DependentUpon>KoltuklarGözlerIstIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstAnk.Designer.cs">
+      <DependentUpon>KoltuklarGünIsigiIstAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstBur.Designer.cs">
+      <DependentUpon>KoltuklarGünIsigiIstBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gün Işığı Turizm\KoltuklarGünIsigiIstIzm.Designer.cs">
+      <DependentUpon>KoltuklarGünIsigiIstIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmirYönFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmirYönFirmalar.Designer.cs">
+      <DependentUpon>IzmirYönFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurAnk.Designer.cs">
+      <DependentUpon>KoltuklarKaracabeyBurAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurIst.Designer.cs">
+      <DependentUpon>KoltuklarKaracabeyBurIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karacabey Turizm\KoltuklarKaracabeyBurIzm.Designer.cs">
+      <DependentUpon>KoltuklarKaracabeyBurIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurAnk.Designer.cs">
+      <DependentUpon>KoltuklarKemalpasaBurAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIst.Designer.cs">
+      <DependentUpon>KoltuklarKemalpasaBurIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIzm.Designer.cs">
+      <DependentUpon>KoltuklarKemalpasaBurIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IstanbulYönFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IstanbulYönFirmalar.Designer.cs">
+      <DependentUpon>IstanbulYönFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnkaraYönFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnkaraYönFirmalar.Designer.cs">
+      <DependentUpon>AnkaraYönFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkBur.Designer.cs">
+      <DependentUpon>KoltuklarSonTurAnkBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkIzm.Designer.cs">
+      <DependentUpon>KoltuklarSonTurAnkIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltuklarSonTurAnkIst.Designer.cs">
+      <DependentUpon>KoltuklarSonTurAnkIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmAnk.Designer.cs">
+      <DependentUpon>KoltuklarKonakIzmAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmBur.Designer.cs">
+      <DependentUpon>KoltuklarKonakIzmBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konak Turizm\KoltuklarKonakIzmIst.Designer.cs">
+      <DependentUpon>KoltuklarKonakIzmIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmAnk.Designer.cs">
+      <DependentUpon>KoltuklarSüratIzmAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüsteriKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüsteriKayitEkrani.Designer.cs">
+      <DependentUpon>MüsteriKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetroTur\KoltuklarRetroAnkBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetroTur\KoltuklarRetroAnkBur.Designer.cs">
+      <DependentUpon>KoltuklarRetroAnkBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetroTur\KoltuklarRetroAnkIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetroTur\KoltuklarRetroAnkIst.Designer.cs">
+      <DependentUpon>KoltuklarRetroAnkIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetroTur\KoltuklarRetroAnkIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetroTur\KoltuklarRetroAnkIzm.Designer.cs">
+      <DependentUpon>KoltuklarRetroAnkIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkBur.Designer.cs">
+      <DependentUpon>KoltuklarSiratAnkBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkIst.Designer.cs">
+      <DependentUpon>KoltuklarSiratAnkIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sirat Tur\KoltuklarSiratAnkIzm.Designer.cs">
+      <DependentUpon>KoltuklarSiratAnkIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmBur.Designer.cs">
+      <DependentUpon>KoltuklarSüratIzmBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sürat Turizm\KoltuklarSüratIzmIst.Designer.cs">
+      <DependentUpon>KoltuklarSüratIzmIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmAnk.Designer.cs">
+      <DependentUpon>KoltuklarTatilyaIzmAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmBur.Designer.cs">
+      <DependentUpon>KoltuklarTatilyaIzmBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatilya Tur\KoltuklarTatilyaIzmIst.Designer.cs">
+      <DependentUpon>KoltuklarTatilyaIzmIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurAnk.Designer.cs">
+      <DependentUpon>KoltuklarTimsahlarBurAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurIst.Designer.cs">
+      <DependentUpon>KoltuklarTimsahlarBurIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timsahlar Turizm\KoltuklarTimsahlarBurIzm.Designer.cs">
+      <DependentUpon>KoltuklarTimsahlarBurIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurAnk.Designer.cs">
+      <DependentUpon>KoltuklarUcarBurAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurIst.Designer.cs">
+      <DependentUpon>KoltuklarUcarBurIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uçar Turizm\KoltuklarUcarBurIzm.Designer.cs">
+      <DependentUpon>KoltuklarUcarBurIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurAnk.Designer.cs">
+      <DependentUpon>KoltuklarYesillerDiyariBurAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIst.Designer.cs">
+      <DependentUpon>KoltuklarYesillerDiyariBurIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIzm.Designer.cs">
+      <DependentUpon>KoltuklarYesillerDiyariBurIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstAnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstAnk.Designer.cs">
+      <DependentUpon>KoltuklarOzcanlarIstAnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstBur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstBur.Designer.cs">
+      <DependentUpon>KoltuklarOzcanlarIstBur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öz Canlar Turizm\KoltuklarOzcanlarIstIzm.Designer.cs">
+      <DependentUpon>KoltuklarOzcanlarIstIzm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ata Turizm\KoltuklarAtaIzmAnk.resx">
+      <DependentUpon>KoltuklarAtaIzmAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ata Turizm\KoltuklarAtaIzmBur.resx">
+      <DependentUpon>KoltuklarAtaIzmBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ata Turizm\KoltuklarAtaIzmIst.resx">
+      <DependentUpon>KoltuklarAtaIzmIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstAnk.resx">
+      <DependentUpon>KoltuklarAgriIstAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstBur.resx">
+      <DependentUpon>KoltuklarAgriIstBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ağrı Dağı Efsanesi\KoltuklarAgriIstIzm.resx">
+      <DependentUpon>KoltuklarAgriIstIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biz Turizm\KoltuklarBizIstAnk.resx">
+      <DependentUpon>KoltuklarBizIstAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biz Turizm\KoltuklarBizIstBur.resx">
+      <DependentUpon>KoltuklarBizIstBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biz Turizm\KoltuklarBizIstIzm.resx">
+      <DependentUpon>KoltuklarBizIstIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BursaYönFirmalar.resx">
+      <DependentUpon>BursaYönFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deniz Mavisi\KoltuklarDenizMavisiIzmAnk.resx">
+      <DependentUpon>KoltuklarDenizMavisiIzmAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deniz Mavisi\KoltuklarDenizMavisiIzmBur.resx">
+      <DependentUpon>KoltuklarDenizMavisiIzmBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deniz Mavisi\KoltuklarDenizMavisiIzmIst.resx">
+      <DependentUpon>KoltuklarDenizMavisiIzmIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecel Turizm\KoltuklarEcelAnkIst.resx">
+      <DependentUpon>KoltuklarEcelAnkIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecel Turizm\KoltuklarEcelAnkBur.resx">
+      <DependentUpon>KoltuklarEcelAnkBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecel Turizm\KoltuklarEcelAnkIzm.resx">
+      <DependentUpon>KoltuklarEcelAnkIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ezcan Turizm\KoltuklarEzcanAnkBur.resx">
+      <DependentUpon>KoltuklarEzcanAnkBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ezcan Turizm\KoltuklarEzcanAnkIst.resx">
+      <DependentUpon>KoltuklarEzcanAnkIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ezcan Turizm\KoltuklarEzcanAnkIzm.resx">
+      <DependentUpon>KoltuklarEzcanAnkIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gözler Turizm\KoltuklarGözlerIstAnk.resx">
+      <DependentUpon>KoltuklarGözlerIstAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gözler Turizm\KoltuklarGözlerIstBur.resx">
+      <DependentUpon>KoltuklarGözlerIstBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gözler Turizm\KoltuklarGözlerIstIzm.resx">
+      <DependentUpon>KoltuklarGözlerIstIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gün Işığı Turizm\KoltuklarGünIsigiIstAnk.resx">
+      <DependentUpon>KoltuklarGünIsigiIstAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gün Işığı Turizm\KoltuklarGünIsigiIstBur.resx">
+      <DependentUpon>KoltuklarGünIsigiIstBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gün Işığı Turizm\KoltuklarGünIsigiIstIzm.resx">
+      <DependentUpon>KoltuklarGünIsigiIstIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmirYönFirmalar.resx">
+      <DependentUpon>IzmirYönFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karacabey Turizm\KoltuklarKaracabeyBurAnk.resx">
+      <DependentUpon>KoltuklarKaracabeyBurAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karacabey Turizm\KoltuklarKaracabeyBurIst.resx">
+      <DependentUpon>KoltuklarKaracabeyBurIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karacabey Turizm\KoltuklarKaracabeyBurIzm.resx">
+      <DependentUpon>KoltuklarKaracabeyBurIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kemal Paşa Tur\KoltuklarKemalpasaBurAnk.resx">
+      <DependentUpon>KoltuklarKemalpasaBurAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIst.resx">
+      <DependentUpon>KoltuklarKemalpasaBurIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kemal Paşa Tur\KoltuklarKemalpasaBurIzm.resx">
+      <DependentUpon>KoltuklarKemalpasaBurIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IstanbulYönFirmalar.resx">
+      <DependentUpon>IstanbulYönFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnkaraYönFirmalar.resx">
+      <DependentUpon>AnkaraYönFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltuklarSonTurAnkBur.resx">
+      <DependentUpon>KoltuklarSonTurAnkBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltuklarSonTurAnkIzm.resx">
+      <DependentUpon>KoltuklarSonTurAnkIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltuklarSonTurAnkIst.resx">
+      <DependentUpon>KoltuklarSonTurAnkIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konak Turizm\KoltuklarKonakIzmAnk.resx">
+      <DependentUpon>KoltuklarKonakIzmAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konak Turizm\KoltuklarKonakIzmBur.resx">
+      <DependentUpon>KoltuklarKonakIzmBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konak Turizm\KoltuklarKonakIzmIst.resx">
+      <DependentUpon>KoltuklarKonakIzmIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sürat Turizm\KoltuklarSüratIzmAnk.resx">
+      <DependentUpon>KoltuklarSüratIzmAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüsteriKayitEkrani.resx">
+      <DependentUpon>MüsteriKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RetroTur\KoltuklarRetroAnkBur.resx">
+      <DependentUpon>KoltuklarRetroAnkBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetroTur\KoltuklarRetroAnkIst.resx">
+      <DependentUpon>KoltuklarRetroAnkIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetroTur\KoltuklarRetroAnkIzm.resx">
+      <DependentUpon>KoltuklarRetroAnkIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sirat Tur\KoltuklarSiratAnkBur.resx">
+      <DependentUpon>KoltuklarSiratAnkBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sirat Tur\KoltuklarSiratAnkIst.resx">
+      <DependentUpon>KoltuklarSiratAnkIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sirat Tur\KoltuklarSiratAnkIzm.resx">
+      <DependentUpon>KoltuklarSiratAnkIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sürat Turizm\KoltuklarSüratIzmBur.resx">
+      <DependentUpon>KoltuklarSüratIzmBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sürat Turizm\KoltuklarSüratIzmIst.resx">
+      <DependentUpon>KoltuklarSüratIzmIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatilya Tur\KoltuklarTatilyaIzmAnk.resx">
+      <DependentUpon>KoltuklarTatilyaIzmAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatilya Tur\KoltuklarTatilyaIzmBur.resx">
+      <DependentUpon>KoltuklarTatilyaIzmBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatilya Tur\KoltuklarTatilyaIzmIst.resx">
+      <DependentUpon>KoltuklarTatilyaIzmIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timsahlar Turizm\KoltuklarTimsahlarBurAnk.resx">
+      <DependentUpon>KoltuklarTimsahlarBurAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timsahlar Turizm\KoltuklarTimsahlarBurIst.resx">
+      <DependentUpon>KoltuklarTimsahlarBurIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timsahlar Turizm\KoltuklarTimsahlarBurIzm.resx">
+      <DependentUpon>KoltuklarTimsahlarBurIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uçar Turizm\KoltuklarUcarBurAnk.resx">
+      <DependentUpon>KoltuklarUcarBurAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uçar Turizm\KoltuklarUcarBurIst.resx">
+      <DependentUpon>KoltuklarUcarBurIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uçar Turizm\KoltuklarUcarBurIzm.resx">
+      <DependentUpon>KoltuklarUcarBurIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurAnk.resx">
+      <DependentUpon>KoltuklarYesillerDiyariBurAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIst.resx">
+      <DependentUpon>KoltuklarYesillerDiyariBurIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeşiller Diyarı Tur\KoltuklarYesillerDiyariBurIzm.resx">
+      <DependentUpon>KoltuklarYesillerDiyariBurIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öz Canlar Turizm\KoltuklarOzcanlarIstAnk.resx">
+      <DependentUpon>KoltuklarOzcanlarIstAnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öz Canlar Turizm\KoltuklarOzcanlarIstBur.resx">
+      <DependentUpon>KoltuklarOzcanlarIstBur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öz Canlar Turizm\KoltuklarOzcanlarIstIzm.resx">
+      <DependentUpon>KoltuklarOzcanlarIstIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\oto.core\oto.core.csproj">
+      <Project>{8fc2ade3-4f15-4e5b-b993-01502d641f2d}</Project>
+      <Name>oto.core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTOBSS.UI", "OTOBSS\OTOBSS.UI.csproj", "{3108DA27-E54D-41F8-9ED3-0872C72E5898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oto.core", "oto.core\oto.core.csproj", "{8FC2ADE3-4F15-4E5B-B993-01502D641F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3108DA27-E54D-41F8-9ED3-0872C72E5898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3108DA27-E54D-41F8-9ED3-0872C72E5898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3108DA27-E54D-41F8-9ED3-0872C72E5898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3108DA27-E54D-41F8-9ED3-0872C72E5898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC2ADE3-4F15-4E5B-B993-01502D641F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC2ADE3-4F15-4E5B-B993-01502D641F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC2ADE3-4F15-4E5B-B993-01502D641F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC2ADE3-4F15-4E5B-B993-01502D641F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3C1C8F-4837-4510-A729-17D8AD96DA87}
+	EndGlobalSection
+EndGlobal
